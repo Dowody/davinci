@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "kinet": "^2.2.1",
+    "kursor": "^0.1.6"
+  }
+}

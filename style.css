@@ -39,12 +39,9 @@
     background-size: 300vh;
     background-position-x: -150vh;
     background-attachment: fixed;
+    overflow-x: hidden;
+    width: 100%;
   }
-  .etapa1-body 
-  {
-    height: 850vh;
-  }
-  
   body a
   {
     color: var(--white);
@@ -281,14 +278,14 @@
      }
      #hambmenu
      {
+        display: block;
          position: absolute;
          left: -100%;
          top: 0;
          width: 300px;
          height: 100vh;
          background-color: var(--main-color);
-         transition: all .5s ease;
-         will-change: filter;
+         transition: all .5s ;
          cursor: default;
          z-index: 2;
          z-index: 9999;
@@ -1166,6 +1163,11 @@ section.pictures
 
 
 /* ETAPA 111111111111 */
+body.etapa1-body .content
+{
+  height: 100%;
+  margin-bottom: 500px;
+}
 
 .etapa1-body .content .etapa1
 {
@@ -1181,6 +1183,13 @@ section.pictures
 {
   animation: .5s fadeIn;
 }
+.etapa1-body #footer .content
+{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
 
 
 /* SCULPTURI */
@@ -1192,7 +1201,7 @@ section.pictures
 
 .sculpturi section.pictures
 {
-  height: 200vh;
+  height: 100%;
 }
 .sculpturi .pictures .box p
 {
@@ -1207,7 +1216,7 @@ section.pictures
 /* MATEMATICA */
 body.matematica .pictures
 {
-  height: 300vh;
+  height: 100%;
 }
 body.matematica .pictures .box .content
 {
@@ -1301,6 +1310,44 @@ body.biografie .home .anim-text
   margin-bottom: 0;
 }
 
+
+
+/* STIINTA */
+body.stiinta .home
+{
+  padding-right: 6vw;
+}
+body.stiinta .home .anim-text 
+{
+  height: 125px;
+  margin-bottom: 0;
+}
+body.stiinta .home .info-text p
+{
+  margin-right: 50px;
+}
+body.stiinta .home .info-text
+{
+  display: flex;
+  align-items: center;
+}
+body.stiinta .pictures .box p
+{
+  padding: 10px 0;
+}
+body.stiinta .pictures
+{
+  height: 100%;
+}
+
+
+
+
+
+
+
+/* MEDIA */
+
 @media screen and (max-width:1100px)
 {
   .home .anim-text h3
@@ -1310,6 +1357,9 @@ body.biografie .home .anim-text
   .home .info-text .text p
   {
     font-size: 14px;
+  }
+  body{
+    background-position-x: -165vh;
   }
 }
 @media screen and (max-width:1000px)
@@ -1359,6 +1409,29 @@ body.biografie .home .anim-text
     height: 250px;
     width: 450px;
   }
+
+  body.arhitectura .home .video img
+  {
+    width: 300px;
+  }
+
+  body.arhitectura .pictures .box1 img,
+  body.arhitectura .pictures .box4 img,
+  body.arhitectura .pictures .box5 img,
+  body.arhitectura .pictures .box7 img
+  {
+    width: 300px;
+    height: 100%;
+  }
+
+  body.arhitectura .pictures .box2 img,
+  body.arhitectura .pictures .box3 img,
+  body.arhitectura .pictures .box6 img,
+  body.arhitectura .pictures .box8 img
+  {
+    width: 300px;
+    height: 100%;
+  }
   
 }
 @media screen and (max-width:850px)
@@ -1399,7 +1472,8 @@ body.biografie .home .anim-text
   {
     font-size: 14px;
   }
-  .home .info-text .text p
+  .home .info-text .text p,
+  .tablouri .home .info-text p
   {
     font-size: 14px;
   }
@@ -1424,8 +1498,43 @@ body.biografie .home .anim-text
     width: 200px;
     height: 150px;
   }
+  .tablouri .home h1 ,
+  .sculpturi .home h1 
+  {
+    font-size: 30px;
+  }
+  .sculpturi .home 
+  {
+    margin-bottom: 200px;
+  }
+
+  body.arhitectura .home .video img
+  {
+    width: 200px;
+  }
+
+  body.arhitectura .pictures .box1 img,
+  body.arhitectura .pictures .box4 img,
+  body.arhitectura .pictures .box5 img,
+  body.arhitectura .pictures .box7 img
+  {
+    width: 200px;
+    height: 100%;
+  }
+
+  body.arhitectura .pictures .box2 img,
+  body.arhitectura .pictures .box3 img,
+  body.arhitectura .pictures .box6 img,
+  body.arhitectura .pictures .box8 img
+  {
+    width: 200px;
+    height: 100%;
+  }
 }
 @media screen and (max-width:700px) {
+  body{
+    background-position-x: -190vh;
+  }
   .header .logo h1
   {
     font-size: 18px;
@@ -1455,17 +1564,22 @@ body.biografie .home .anim-text
     font-size: 12px;
     padding: 0 15px;
   }
-  .home h1
+  .biografie .home h1,
+  .tablouri .home h1,
+  .sculpturi .home h1,
+  .desene .home h1,
+  .stiinta .home h1
   {
-    font-size: 30px;
+    font-size: 25px;
   }
   .home .anim-text h3
   {
     font-size: 13px;
   }
-  .home .info-text .text p
+  .home .info-text .text p,
+  .tablouri .home .info-text p
   {
-    font-size: 13px;
+    font-size: 14px;
   }
   .home .info-text .video iframe
   {
@@ -1512,6 +1626,59 @@ body.biografie .home .anim-text
     height: 100%;
     width: 400px;
   }
+
+  body.arhitectura .home
+  {
+    margin-bottom: 0;
+  }
+  body.arhitectura .home .info .info-text
+  {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  body.arhitectura .home .info .info-text .video
+  {
+    display: none;
+  }
+  body.arhitectura .home .info .info-text .text
+  {
+    padding: 0;
+  }
+  
+  body.arhitectura .pictures .box
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  body.arhitectura .pictures .box .content
+  {
+    padding: 0;
+  }
+  body.arhitectura .pictures .box1
+  {
+    margin-top: 0;
+  }
+  body.arhitectura .pictures .box1 img,
+  body.arhitectura .pictures .box4 img,
+  body.arhitectura .pictures .box5 img,
+  body.arhitectura .pictures .box7 img
+  {
+    width: 250px;
+    height: 100%;
+  }
+
+  body.arhitectura .pictures .box2 img,
+  body.arhitectura .pictures .box3 img,
+  body.arhitectura .pictures .box6 img,
+  body.arhitectura .pictures .box8 img
+  {
+    width: 300px;
+    height: 100%;
+  }
+  body.stiinta .home
+  {
+    margin-bottom: 525px;
+  }
 }  
 @media screen and (max-width:600px) {
   .home h1
@@ -1526,6 +1693,14 @@ body.biografie .home .anim-text
   {
     font-size: 11px;
     padding: 0 12px;
+  }
+  .sculpturi .home
+  {
+    margin-bottom: 350px;
+  }
+  .header .logo
+  {
+    animation: .5s fadeIn;
   }
 }
 @media screen and (max-width:500px) {
@@ -1617,6 +1792,7 @@ body.biografie .home .anim-text
     height: 125vh;
   }
 
+  
 }
 @media screen and (max-width:450px) {
   .header .logo img
@@ -1646,6 +1822,7 @@ body.biografie .home .anim-text
   {
     margin-bottom: 400px;
   }
+  
   .pictures .box1 img,
   .pictures .box4 img,
   .pictures .box5 img,
@@ -1664,9 +1841,11 @@ body.biografie .home .anim-text
     height: 100%;
     width: 300px;
   }
-  .tablouri .home h1
+  .biografie .home h1,
+  .tablouri .home h1,
+  .sculpturi .home h1
   {
-    font-size: 21px;
+    font-size: 22px;
   }
   .tablouri .home .anim-text h3
   {
@@ -1678,11 +1857,15 @@ body.biografie .home .anim-text
     font-size: 14px;
     padding-right: 0;
   }
+  .tablouri .home .anim-text
+  {
+    height: 150px;
+  }
 }
 @media screen and (max-width:450px) {
   .header .logo
   {
-    margin: 0px 75px;
+    margin: 0px 90px;
   }
   .nav .mobnav ul a
   {
@@ -1696,10 +1879,12 @@ body.biografie .home .anim-text
   {
     height: 150vh;
   }
-
-  .header .logo
+  .biografie .home h1,
+  .tablouri .home h1,
+  .sculpturi .home h1,
+  .stiinta .home h1
   {
-    animation: .5s fadeIn;
+    font-size: 20px;
   }
 
 }
@@ -1713,6 +1898,38 @@ body.biografie .home .anim-text
   {
     font-size: 18px;
   }
+  .sculpturi .home 
+  {
+    margin-bottom: 600px;
+  }
+  .matematica .home 
+  {
+    margin-bottom: 350px;
+  }
+  .biografie .home
+  {
+    height: 100%;
+  }
+  .biografie .home h1,
+  .tablouri .home h1,
+  .sculpturi .home h1,
+  .stiinta .home h1
+  {
+    font-size: 18px;
+  }
+  .biografie .home .anim-text h3,
+  .tablouri .home .anim-text h3,
+  .sculpturi .home .anim-text h3,
+  .stiinta .home .anim-text h3
+  {
+    font-size: 14px;
+  }
+
+  body.arhitectura .home
+  {
+    margin-bottom: 250px;
+  }
+  
 }
 
 @media screen and (max-width:350px) {
@@ -1730,37 +1947,53 @@ body.biografie .home .anim-text
   {
     height: 130vh;
   }
-}
+  .sculpturi .home 
+  {
+    margin-bottom: 700px;
+  }
+  .sculpturi .home .anim-text
+  {
+    height: 160px;
+  }
+  .sculpturi .nav 
+  {
+    height: 12vh;
+  }
+  .header .logo
+  {
+    margin: 0px 75px;
+  }
+  .header .logo img
+  {
+    width: 80px;
+  }
+  .header .logo h1
+  {
+    font-size: 10px;
+  }
+  .header .logo h1 .span1
+  {
+    right: 25px;
+  }
+  .header .logo h1 .span2
+  {
+    left: 20px;
+  }
+  body.arhitectura .pictures .box1 img,
+  body.arhitectura .pictures .box4 img,
+  body.arhitectura .pictures .box5 img,
+  body.arhitectura .pictures .box7 img
+  {
+    width: 200px;
+    height: 100%;
+  }
 
-/* STIINTA */
-body.stiinta
-{
-  height: 390vh;
-}
-
-body.stiinta .home
-{
-  padding-right: 6vw;
-}
-body.stiinta .home .anim-text 
-{
-  height: 125px;
-  margin-bottom: 0;
-}
-body.stiinta .home .info-text p
-{
-  margin-right: 50px;
-}
-body.stiinta .home .info-text
-{
-  display: flex;
-  align-items: center;
-}
-body.stiinta .pictures .box p
-{
-  padding: 10px;
-}
-body.stiinta .pictures
-{
-  height: 2500px;
+  body.arhitectura .pictures .box2 img,
+  body.arhitectura .pictures .box3 img,
+  body.arhitectura .pictures .box6 img,
+  body.arhitectura .pictures .box8 img
+  {
+    width: 250px;
+    height: 100%;
+  }
 }

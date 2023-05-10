@@ -1,5 +1,9 @@
 
-  
+  // PRELOAD
+setTimeout(function(){
+  $('.loader_bg').fadeToggle();
+}, 600);
+
   
 // HEADER HAMB
 $('.hamburger').click(function(){
@@ -242,6 +246,7 @@ const slider16 = new SliderClip(document.querySelector(".slider16"));
 
 
 };
+
 
 
 // LANGUAGE CHANGE

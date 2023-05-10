@@ -346,6 +346,7 @@
       height: 100%;
       background-color: #00000021;
       cursor: default;
+      animation: .5s fadeIn;
      }
      #side-menu:checked ~ #hambmenu
      {
@@ -1505,6 +1506,14 @@ body.stiinta .pictures
   }
 }
 @media screen and (max-width:800px) {
+  .header .hamb #hambmenu .xbutton
+  {
+    margin-bottom: 30px;
+  }
+  .header .hamb #hambmenu .proiecte
+  {
+    margin-top: 20px;
+  }
   .header .hamb #hambmenu h4
   {
     font-size: 13px;
@@ -1512,6 +1521,10 @@ body.stiinta .pictures
   .header .hamb #hambmenu a
   {
     font-size: 13px;
+  }
+  .header .hamb #hambmenu li
+  {
+    padding: 9px 0;
   }
   .nav ul a
   {

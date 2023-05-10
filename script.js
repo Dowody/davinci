@@ -1,10 +1,10 @@
 
-  // PRELOAD
+// PRELOAD
 setTimeout(function(){
   $('.loader_bg').fadeToggle();
 }, 600);
 
-  
+
 // HEADER HAMB
 $('.hamburger').click(function(){
     $(this).toggleClass("is-active");

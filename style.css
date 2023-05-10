@@ -428,7 +428,7 @@
      }
 
 
-/* LANGUAGEs */
+/* LANGUAGES */
 .languages
 {
     display: flex;
@@ -444,6 +444,10 @@
     padding: 7px;
     cursor: pointer;
 }
+/* .select-btn.active ~ .languages .content ul li a 
+{
+  display: block;
+} */
 .select-btn.active
 {
     padding: 7px;
@@ -456,10 +460,10 @@
 .languages .content
 {  
   pointer-events: none;
-    position: relative;
-    top: -20px;
-    opacity: 0;
-    transition: .3s ease;
+  position: relative;
+  top: -20px;
+  opacity: 0;
+  transition: .3s ease;
 }
 .languages .content.active
 {
@@ -1583,7 +1587,7 @@ body.stiinta .pictures
 }
 @media screen and (max-width:700px) {
   body{
-    background-position-x: -190vh;
+    background-position-x: -180vh;
   }
   .header .logo h1
   {
@@ -1746,7 +1750,7 @@ body.stiinta .pictures
   }
   .sculpturi .home
   {
-    margin-bottom: 350px;
+    margin-bottom: 400px;
   }
   .header .logo
   {
@@ -1754,6 +1758,9 @@ body.stiinta .pictures
   }
 }
 @media screen and (max-width:500px) {
+  body{
+    background-position-x: -190vh;
+  }
   .header .logo img
   {
     width: 125px;
@@ -1845,6 +1852,9 @@ body.stiinta .pictures
   
 }
 @media screen and (max-width:450px) {
+  body{
+    background-position-x: -195vh;
+  }
   .header .logo img
   {
     width: 100px;
@@ -1907,12 +1917,11 @@ body.stiinta .pictures
     font-size: 14px;
     padding-right: 0;
   }
-  .tablouri .home .anim-text
+  .tablouri .home .anim-text,
+  .sculpturi .home .anim-text
   {
     height: 150px;
   }
-}
-@media screen and (max-width:450px) {
   .header .logo
   {
     margin: 0px 90px;
@@ -1936,9 +1945,11 @@ body.stiinta .pictures
   {
     font-size: 20px;
   }
-
 }
 @media screen and (max-width:400px) {
+  body{
+    background-position-x: -199vh;
+  }
   .tablouri .home 
   {
     margin-bottom: 500px;
@@ -1979,7 +1990,10 @@ body.stiinta .pictures
   {
     margin-bottom: 250px;
   }
-  
+  .header .logo
+  {
+    margin: 0px 80px;
+  }
 }
 
 @media screen and (max-width:350px) {

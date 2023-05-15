@@ -64,7 +64,7 @@
   {
       position: fixed;
       z-index: 999999;
-      background: #f9eedc;
+      background: var(--main-color);
       width: 100%;
       height: 100vh;
       display: flex;
@@ -79,7 +79,7 @@
       font-weight: 700;
       color: var(--blue-color);
       border-radius: 50%;
-      border: 2px dashed var(--main-color);
+      border: 2px dashed #ffffff3a;
   }
 
   .loader_bg img::before
@@ -243,6 +243,7 @@
     height: 0;
     animation: zoomIn .5s;
     animation-delay: .6s;
+    cursor: pointer;
   }
   .header .logo h1
   {
@@ -445,10 +446,6 @@
     padding: 7px;
     cursor: pointer;
 }
-/* .select-btn.active ~ .languages .content ul li a 
-{
-  display: block;
-} */
 .select-btn.active
 {
     padding: 7px;
@@ -471,12 +468,14 @@
   pointer-events: auto;
     top: 0px;
     opacity: 1;
+
 }
 .languages .content .options
 {
     display: flex;
     flex-direction: column;
     padding-bottom: 5px;
+
 }
 .languages .content .options li
 {
@@ -494,6 +493,7 @@
 {
     color: var(--box-color1);
 }
+
 
 .reveal
 {
@@ -529,7 +529,6 @@ section.nav {
 {
   display: flex;
   align-items: center;
-  animation: fadeIn 1s;
   height: 100%;
 }
 .nav ul a
@@ -617,9 +616,12 @@ section.home
 
 .participants
 {
+  display: flex;
+  flex-direction: column;
   margin: 5vh 0;
   padding-right: 10vw;
   overflow: hidden;
+  width: 85%;
 }
 .participants p
 {
@@ -792,6 +794,7 @@ section.content
 }
 .intro .school-animtxt .titlee {
   animation: slideUpp ease .5s forwards .5s;
+  animation-delay: .7s;
   margin-top: 30px;
   color: var(--black);
   opacity: 0.8;
@@ -846,26 +849,36 @@ section.content
   from {left: 100%;}
   to {left: 0%;}
 }
-.slider1.active,
-.slider3.active,
-.slider5.active,
-.slider7.active,
-.slider9.active,
-.slider11.active,
-.slider13.active,
-.slider15.active,
-.slider17.active
+.etapa1 .slider1.active,
+.etapa1 .slider3.active,
+.etapa1 .slider5.active,
+.etapa1 .slider7.active,
+.etapa1 .slider9.active,
+.etapa1 .slider11.active,
+.etapa1 .slider13.active,
+.etapa1 .slider15.active,
+.etapa1 .slider17.active
 {
   animation: 1s slide-left-img;
 }
-.slider2.active,
-.slider4.active,
-.slider6.active,
-.slider8.active,
-.slider10.active,
-.slider12.active,
-.slider14.active,
-.slider16.active
+.etapa1 .slider2.active,
+.etapa1 .slider4.active,
+.etapa1 .slider6.active,
+.etapa1 .slider8.active,
+.etapa1 .slider10.active,
+.etapa1 .slider12.active,
+.etapa1 .slider14.active,
+.etapa1 .slider16.active
+{
+  animation: 1s slide-right-img;
+}
+
+.etapa1-body .content .box .obiect16.box .slider16 li
+{
+  background-position-y: -550px;
+}
+
+.etapa2 .slider1.active
 {
   animation: 1s slide-right-img;
 }
@@ -877,6 +890,7 @@ section.content
 	height: 115%;
   transition: .3s ease;
   -webkit-transition: .3s ease;
+  
 }
 .slider:hover {
   scale: 1.03;
@@ -894,6 +908,8 @@ section.content
 	clip: rect(0, 100vw, 100vh, 100vw);
 	display: table;
   border-radius: 5px;
+  border: 1px solid #00000022;
+
 }
 .slider h3 {
 	font-size: 5rem;
@@ -1006,6 +1022,10 @@ section.content
 {
   float: right;
 }
+.content .box .obiect6.obiect6-margintop
+{
+  margin-top: 200px;
+}
 
 .content .box .obiect13.box
 {
@@ -1052,9 +1072,47 @@ section.content
 }
 
 
-.content .etapa2 .title h2
+.content #etapa2 .title h2
 {
   font-size: 28px;
+}
+.content .box .intro .see-project
+{
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+}
+.content .box .intro .see-project.pad
+{
+  margin: 10px 0;
+}
+.content .box .intro .see-project.padd
+{
+  margin: 10px 0 50px 0;
+}
+.content .box .intro .see-project .arrows
+{
+  width: 13px;
+  height: 13px;
+  transform: rotate(90deg);
+  margin-left: 20px;
+  opacity: 0.7;
+  animation: 2s textHighlight infinite;
+}
+.content .box .intro a
+{
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+@keyframes textHighlight {
+  0% {transform: translateX(0), rotate(90deg); }
+  50% {transform: translateX(10px) rotate(90deg);}
+  70% {transform: translateX(0px) rotate(90deg);}
+  90% {transform: translateX(10px) rotate(90deg);}
+  100% {transform: translateX(0) rotate(90deg);}
 }
 
 
@@ -1218,20 +1276,21 @@ section.pictures
 
 
 /* ETAPA 111111111111 */
+
 body.etapa1-body .content
 {
   height: 100%;
   margin-bottom: 500px;
 }
 
-.etapa1-body .content .etapa1
+.content .etapa1
 {
   padding-top: 0;
 }
 
 .etapa1-body .content .etapa1 .obiect2
 {
-  margin-top: 200px;
+  margin-top: 225px;
 }
 
 .etapa1-body .content .etapa1 .intro .left 
@@ -1244,6 +1303,84 @@ body.etapa1-body .content
   padding-bottom: 0;
   justify-content: center;
   align-items: center;
+}
+.index-body .content .box .obiect1.box
+{
+  margin-top: 100px;
+}
+
+/* ETAPA2 222222 */
+.etapa2-body .content .box .obiect2.box,
+.etapa2-body .content .box .obiect3.box,
+.etapa2-body .content .box .obiect4.box,
+.etapa2-body .content .box .obiect5.box,
+.etapa2-body .content .box .obiect6.box,
+.etapa2-body .content .box .obiect7.box,
+.etapa2-body .content .box .obiect8.box,
+.etapa2-body .content .box .obiect9.box,
+.etapa2-body .content .box .obiect10.box,
+.etapa2-body .content .box .obiect11.box,
+.etapa2-body .content .box .obiect12.box,
+.etapa2-body .content .box .obiect13.box,
+.etapa2-body .content .box .obiect14.box,
+.etapa2-body .content .box .obiect15.box,
+.etapa2-body .content .box .obiect16.box,
+.etapa2-body .content .box .obiect17.box
+{
+  margin-top: 125px;
+}
+
+.etapa2-body .content .box .obiect2.box 
+{
+  margin-top: 225px;
+}
+.etapa2-body .content .box .obiect6.box
+{
+  margin-top: 175px;
+}
+.etapa2-body .content .box .obiect7.box
+{
+  margin-top: 350px;
+}
+.etapa2-body .content .box .obiect8.box
+{
+  margin-top: 200px;
+}
+.etapa2-body .content .box .obiect10.box,
+.etapa2-body .content .box .obiect11.box,
+.etapa2-body .content .box .obiect12.box,
+.etapa2-body .content .box .obiect13.box
+{
+  height: 400px;
+}
+.etapa2-body .content .box .obiect13.box
+{
+  margin-bottom: 400px;
+}
+
+
+.etapa2-body .school-animtxt
+{
+  margin-top: 100px;
+}
+.content #etapa2 .title .title-mobile
+{
+  display: none;
+}
+
+
+
+.index-body .content .box .obiect4.box
+{
+  margin-top: 100px;
+}
+.index-body .content .box .obiect2.box
+{
+  margin-top: 150px;
+}
+.index-body .content .box .obiect3.box
+{
+  margin-top: 100px;
 }
 
 
@@ -1402,7 +1539,21 @@ body.stiinta .pictures
 
 
 /* MEDIA */
-
+@media screen and (max-height:900px)
+{
+  #hambmenu li 
+  {
+    padding: 9px 0;
+  }
+}
+@media screen and (max-width:1400px)
+{
+  .header .logo img
+  {
+    height: 180px;
+    width: 180px;
+  }
+}
 @media screen and (max-width:1100px)
 {
   .home .anim-text h3
@@ -1415,6 +1566,13 @@ body.stiinta .pictures
   }
   body{
     background-position-x: -165vh;
+  }
+  .content #etapa1 .title h2,
+  .content #etapa2 .title h2
+  {
+    font-size: 23px;
+    box-shadow: inset 0 -0.5em 0 var(--box-color1);
+    height: 35px;
   }
 }
 @media screen and (max-width:1000px)
@@ -1436,7 +1594,27 @@ body.stiinta .pictures
     font-size: 15px;
     padding: 0 25px;
   }
+  .content .box .box h1
+  {
+    font-size: 36px;
+  }
 
+  .etapa2-body .content .box .obiect2.box
+  {
+    margin-top: 300px;
+  }
+  .etapa2-body .content .box .obiect5.box 
+  {
+    margin-top: 125px;
+  }
+  .etapa2-body .content .box .obiect7.box 
+  {
+    margin-top: 325px;
+  }
+  .etapa2-body .content .box .obiect8.box 
+  {
+    margin-top: 175px;
+  }
 }
 
 @media screen and (max-width:900px)
@@ -1486,6 +1664,11 @@ body.stiinta .pictures
   {
     width: 300px;
     height: 100%;
+  }
+
+  .content #etapa2 .title h2
+  {
+    font-size: 20px;
   }
   
 }
@@ -1597,6 +1780,60 @@ body.stiinta .pictures
     width: 200px;
     height: 100%;
   }
+
+  .etapa1-body .content .box .obiect11.box .slider11 ul li
+  {
+    background: url(images/IPLTGRIGOREVIERU/ISTORIE/viber_image_2023-04-21_17-11-55-313.jpg);
+    background-size: 300px;
+    background-position-y: 300px;
+  }
+  .etapa1-body .content .box .obiect15.box .slider15 ul li
+  {
+    background: url(images/IPLTGRIGOREVIERU/);
+    background-size: 300px;
+    background-position-y: 300px;
+  }
+  
+  .etapa1-body .content .box .obiect13.box .school-animtxt,
+  .etapa1-body .content .box .obiect14.box .school-animtxt,
+  .etapa1-body .content .box .obiect15.box .school-animtxt,
+  .etapa1-body .content .box .obiect16.box .school-animtxt
+  {
+    margin-top: 100px;
+  }
+
+  .etapa1-body .content .box .obiect16.box .slider16 li
+  {
+    background-position-y: -200px;
+  }
+  .etapa1-body .content .box .obiect8.box 
+  {
+    margin-top: 225px;
+  }
+  .etapa1-body .content .box .obiect11.box 
+  {
+    margin-top: 225px;
+  }
+
+  .content #etapa2 .title .title-desktop
+  {
+    display: none;
+  }
+  .content #etapa2 .title .title-mobile
+  {
+    display: block;
+    margin-bottom: 50px;
+    font-size: 23px;
+  }
+  .content #etapa2 .title .title-mobile span
+  {
+    display: block;
+    box-shadow: inset 0 -0.5em 0 var(--box-color1);
+    height: 35px;
+  }
+  
+
+
 }
 @media screen and (max-width:700px) {
   body{
@@ -1696,7 +1933,7 @@ body.stiinta .pictures
 
   body.arhitectura .home
   {
-    margin-bottom: 0;
+    margin-bottom: 150px;
   }
   body.arhitectura .home .info .info-text
   {
@@ -1746,6 +1983,25 @@ body.stiinta .pictures
   {
     margin-bottom: 525px;
   }
+
+  .content .box .box .slider 
+  {
+    margin-top: 50px;
+    height: 350px;
+  }
+  .content .box .box 
+  {
+    height: 650px;
+  }
+  .etapa2-body .content .box .obiect10.box,
+  .etapa2-body .content .box .obiect11.box,
+  .etapa2-body .content .box .obiect12.box,
+  .etapa2-body .content .box .obiect13.box
+
+  {
+    height: 750px;
+  }
+  
 }  
 @media screen and (max-width:600px) {
   .home h1
@@ -1958,6 +2214,10 @@ body.stiinta .pictures
   {
     font-size: 20px;
   }
+  .content #etapa2 .title .title-mobile
+  {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width:400px) {
   body{
@@ -2006,6 +2266,19 @@ body.stiinta .pictures
   .header .logo
   {
     margin: 0px 80px;
+  }
+  .content .box .box h1
+  {
+    font-size: 40px;
+  }
+  .content #etapa2 .title .title-mobile
+  {
+    font-size: 17px;
+    height: 31px;
+  }
+  .content #etapa2 .title .title-mobile span
+  { 
+    height: 31px;
   }
 }
 
@@ -2072,5 +2345,9 @@ body.stiinta .pictures
   {
     width: 250px;
     height: 100%;
+  }
+  .content #etapa2 .title .title-mobile
+  {
+    font-size: 16px;
   }
 }

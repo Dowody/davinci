@@ -581,7 +581,7 @@ section.home
   font-size: 35px;
   font-weight: 900;
 }
-.home h1 span
+.home h1 .heading-span1
 {
   text-transform: capitalize;
 }
@@ -592,7 +592,7 @@ section.home
   font-size: 20px;
   margin-top: 30px;
   animation: slideUp ease .5s forwards .5s;
-  animation-delay: .6s;
+  animation-delay: .8s;
   box-shadow: inset 0 -0.5em 0 var(--box-color1);
 }
 .home .anim-text
@@ -601,6 +601,10 @@ section.home
   height: 30px;
   overflow: hidden;
   margin-top: 30px;
+}
+.home .anim-text.mobile 
+{
+  display: none;
 }
 
 .home .pictures
@@ -642,7 +646,7 @@ section.home
   opacity: 0.8;
   letter-spacing: 0.4px;
   animation: slide-right 1s;
-  animation-delay: 0.6s;
+  animation-delay: 0.8s;
 }
 
 .participants a:after
@@ -798,7 +802,7 @@ section.content
 }
 .intro .school-animtxt .titlee {
   animation: slideUpp ease .5s forwards .5s;
-  animation-delay: .7s;
+  animation-delay: 1s;
   margin-top: 30px;
   color: var(--black);
   opacity: 0.8;
@@ -1582,6 +1586,27 @@ body.stiinta .pictures
     box-shadow: inset 0 -0.5em 0 var(--box-color1);
     height: 35px;
   }
+
+  .index-body .home h1
+  {
+    font-size: 30px;
+  }
+  .index-body .home .anim-text h3
+  {
+    font-size: 15px;
+  }
+  .index-body .home .participants p
+  {
+    font-size: 13px;
+  }
+  .index-body .home .participants a
+  {
+    font-size: 11.5px;
+  }
+  .index-body .home .pictures img
+  {
+    width: 225px;
+  }
 }
 @media screen and (max-width:1000px)
 {
@@ -1622,6 +1647,31 @@ body.stiinta .pictures
   .etapa2-body .content .box .obiect8.box 
   {
     margin-top: 175px;
+  }
+
+  .index-body .home h1
+  {
+    font-size: 27px;
+  }
+  .index-body .home .anim-text h3
+  {
+    font-size: 14px;
+  }
+  .index-body .home .participants a
+  {
+    font-size: 10.5px;
+  }
+  .index-body .home .pictures img
+  {
+    width: 200px;
+  }
+  .index-body .results .content .box h2
+  {
+    font-size: 60px;
+  }
+  .index-body .results .content .box p
+  {
+    font-size: 13px;
   }
 }
 
@@ -1679,6 +1729,34 @@ body.stiinta .pictures
     font-size: 20px;
   }
   
+  .index-body .home h1
+  {
+    font-size: 25px;
+  }
+  .index-body .home .anim-text h3
+  {
+    font-size: 12.5px;
+  }
+  .index-body .home .participants a
+  {
+    font-size: 10.5px;
+  }
+  .index-body .home .pictures img
+  {
+    width: 200px;
+  }
+  .index-body .results .content .box
+  {
+    padding: 0 30px;
+  }
+  .index-body .results .content .box h2
+  {
+    font-size: 60px;
+  }
+  .index-body .results .content .box p
+  {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width:850px)
 {
@@ -1840,7 +1918,46 @@ body.stiinta .pictures
     height: 35px;
   }
   
+  .index-body .home-arrow
+  {
+    display: none;
+  }
 
+  .index-body .home
+  {
+    padding-right: 6vw;
+  }
+  .index-body .home h1
+  {
+    padding-right: 10vw;
+    font-size: 24px;
+  }
+  .index-body .home .anim-text
+  {
+    padding-right: 0%;
+  }
+  .index-body .home .anim-text h3
+  {
+    font-size: 16px;
+  }
+  .index-body .home .participants
+  {
+    padding-right: 0;
+    width: 100%;
+  }
+  .index-body .home .participants a
+  {
+    font-size: 12px;
+  }
+  
+  .index-body .home .pictures
+  {
+    display: none;
+  }
+  .index-body .home .pictures img
+  {
+    width: 150px;
+  }
 
 }
 @media screen and (max-width:700px) {
@@ -2005,11 +2122,36 @@ body.stiinta .pictures
   .etapa2-body .content .box .obiect11.box,
   .etapa2-body .content .box .obiect12.box,
   .etapa2-body .content .box .obiect13.box
-
   {
     height: 750px;
   }
   
+  .index-body .home h1
+  {
+    padding-right: 2vw;
+    font-size: 22px;
+  }
+  .index-body .home .anim-text h3
+  {
+    font-size: 14px;
+  }
+  .index-body .home .participants a
+  {
+    font-size: 12px;  
+  }
+  .index-body .results .content .box
+  {
+    padding: 0 20px;
+    line-height: 50px;
+  }
+  .index-body .results .content .box h2
+  {
+    font-size: 50px;
+  }
+  .index-body .results .content .box p
+  {
+    font-size: 12px;
+  }
 }  
 @media screen and (max-width:600px) {
   .home h1
@@ -2032,6 +2174,34 @@ body.stiinta .pictures
   .header .logo
   {
     animation: .5s fadeIn;
+  }
+
+  .index-body .home h1
+  {
+    padding-right: 0vw;
+    font-size: 19px;
+  }
+  .index-body .home .anim-text h3
+  {
+    font-size: 12px;
+  }
+  .index-body .home .participants a
+  {
+    font-size: 11px;  
+    padding-left: 0;
+  }
+  .index-body .results .content .box
+  {
+    padding: 0 15px;
+    line-height: 50px;
+  }
+  .index-body .results .content .box h2
+  {
+    font-size: 40px;
+  }
+  .index-body .results .content .box p
+  {
+    font-size: 11px;
   }
 }
 @media screen and (max-width:500px) {
@@ -2129,16 +2299,105 @@ body.stiinta .pictures
     0% {transform: translateY(0);}
     100% {transform: translateY(-50px);opacity:1;}
   }
+  
   .intro .school-animtxt
   {
     padding: 20px 0 20px 0;
   }
   .intro .school-animtxt .titlee {
-  animation: slideUppp ease .5s forwards .5s;
-    font-size: 13px;
+    animation: slideUppp ease .5s forwards .5s;
+    animation-delay: 1s;
+    font-size: 14px;
   }
   .intro .school-animtxt .titlee span{
     display: block;
+  }
+  .content .box .box .left p
+  {
+    font-size: 14px;
+  }
+  .content .box .box .left .profesor
+  {
+    font-size: 14px;
+  }
+  .content .title h2 img
+  {
+    width: 10px;
+  }
+
+  .index-body .home
+  {
+    height: 100vh;
+  }
+  .index-body .home h1
+  {
+    padding-right: 0vw;
+    font-size: 24px;
+  }
+  .index-body .home .heading_span1
+  {
+    display: block;
+  }
+  .home .anim-text.mobile 
+  {
+    display: flex;
+    height: 42px;
+  }
+  .home .anim-text h3 .span2
+  {
+    display: block;
+    height: 20px;
+    box-shadow: inset 0 -0.5em 0 var(--box-color1);
+  }
+  .index-body .home .anim-text.desktop 
+  {
+    display: none;
+  }
+  .index-body .home .anim-text h3
+  {
+    line-height: 22px;
+    height: 20px;
+    font-size: 15px;
+    transform: translateY(10px);
+  }
+  .index-body .home .participants a
+  {
+    font-size: 13px;  
+    padding-left: 0px;
+  }
+  .index-body .results
+  {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+  }
+  .index-body .results .content 
+  {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 2fr));
+    grid-template-rows: repeat(2, minmax(50px, 2fr));
+  }
+  .index-body .results .content .box
+  {
+    padding: 10px 15px;
+    line-height: 60px;
+  }
+  .index-body .results .content .box h2
+  {
+    font-size: 60px;
+  }
+  .index-body .results .content .box p
+  {
+    font-size: 14px;
+  }
+  .index-body .home .participants a
+  {
+    animation: none;
+  }
+  .index-body .header .logo
+  {
+    animation: 1s fadeIn;
+    animation-delay: .6s;
   }
 }
 @media screen and (max-width:450px) {
@@ -2218,7 +2477,7 @@ body.stiinta .pictures
   }
   .nav .mobnav ul a
   {
-    font-size: 13px;
+    font-size: 14px;
   }
   .home h1
   {
@@ -2238,6 +2497,19 @@ body.stiinta .pictures
   .content #etapa2 .title .title-mobile
   {
     font-size: 20px;
+  }
+
+  .index-body .home h1
+  {
+    padding-right: 0vw;
+    font-size: 22px;
+  }
+
+  .loader_bg img,
+  .loader_bgg img
+  {
+    width: 250px;
+    height: 250px;
   }
 }
 @media screen and (max-width:400px) {
@@ -2301,14 +2573,75 @@ body.stiinta .pictures
   { 
     height: 31px;
   }
+  .index-body .results .content 
+  {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(175px, 2fr));
+    grid-template-rows: repeat(2, minmax(50px, 2fr));
+  }
+  .index-body .results .content .box
+  {
+    padding: 10px 0px;
+    line-height: 60px;
+  }
+  .index-body .results .content .box h2
+  {
+    font-size: 50px;
+  }
+  .index-body .home h1
+  {
+    padding-right: 0vw;
+    font-size: 19.5px;
+  }
+}
+@media screen and (max-height:650px) 
+{
+  .header .hamb #hambmenu .navig li
+  {
+    padding: 7px 0;    
+  }
+}
+@media screen and (max-height:750px) 
+{
+  .index-body .home
+  {
+    margin-bottom: 150px;
+  }
+  .nav .mobnav ul a
+  {
+    font-size: 13px;
+    padding: 6px 20px;
+  }
+}
+@media screen and (max-width:360px) 
+{
+  .index-body .home h1
+  {
+    padding-right: 0vw;
+    font-size: 19px;
+  }
+  .index-body .results .content 
+  {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 2fr));
+    grid-template-rows: repeat(2, minmax(50px, 2fr));
+  }
+  .index-body .results .content .box
+  {
+    padding: 10px 15px;
+    line-height: 60px;
+  }
+  .index-body .results .content .box h2
+  {
+    font-size: 50px;
+  }
 }
 
 @media screen and (max-width:350px) {
   .nav .mobnav ul a
   {
     font-size: 11px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 6px 18px;
   }
   .home h1
   {
@@ -2370,5 +2703,42 @@ body.stiinta .pictures
   .content #etapa2 .title .title-mobile
   {
     font-size: 16px;
+  }
+  .index-body .home
+  {
+    margin-bottom: 200px;
+  }
+  .index-body .home h1
+  {
+    padding-right: 0vw;
+    font-size: 17.5px;
+  }
+  .index-body .home .anim-text h3
+  {
+    padding-right: 0vw;
+    font-size: 14px;
+  }
+  .index-body .results .content 
+  {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50px, 2fr));
+    grid-template-rows: repeat(2, minmax(50px, 2fr));
+  }
+  .index-body .results
+  {
+    height: 45vh;
+  }
+  .index-body .results .content .box
+  {
+    padding: 0px 15px;
+    line-height: 60px;
+  }
+  .index-body .results .content .box h2
+  {
+    font-size: 40px;
+  }
+  .index-body .results .content .box p
+  {
+    font-size: 13px;
   }
 }

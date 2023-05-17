@@ -1,7 +1,7 @@
 // PRELOAD
 setTimeout(function(){
   $('.loader_bg').fadeToggle();
-}, 7000);
+}, 600);
 
 setTimeout(function(){
   $('.loader_bgg').fadeToggle();

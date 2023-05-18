@@ -1135,13 +1135,19 @@ section.content
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 30vh;
+  height: 35vh;
   background-color: var(--main-color);
+  font-family: 'Open Sans';
 }
 #footer .content
 {
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+#footer .content .nav.mobile
+{
+  display: none;
 }
 #footer .content p
 {
@@ -1160,6 +1166,53 @@ section.content
 #footer .content .mob p
 {
   display: none;
+}
+#footer .content .nav
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+#footer .content .nav li
+{
+  padding: 0 50px;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  color: var(--white);
+}
+#footer .content .nav li.active
+{
+  text-decoration: underline;
+}
+#footer .content .nav li:hover
+{
+  transform: translateY(-3px);
+}
+#footer .content .nav span
+{
+  width: 1px ;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.264);
+}
+#footer .content .info-proiect
+{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-family: 'Playfair Display';
+}
+#footer .content .info-proiect a
+{
+  color: var(--box-color2);
+  text-decoration: underline;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  font-size: 14px;
+}
+#footer .content .info-proiect a:hover
+{
+  transform: translateY(-3px);
 }
 
 
@@ -1336,7 +1389,7 @@ body.etapa1-body .content
 .etapa2-body .content .box .obiect16.box,
 .etapa2-body .content .box .obiect17.box
 {
-  margin-top: 125px;
+  margin-top: 100px;
 }
 
 .etapa2-body .content .box .obiect2.box 
@@ -1560,6 +1613,14 @@ body.stiinta .pictures
   }
 }
 @media screen and (max-width:1400px)
+{
+  .header .logo img
+  {
+    height: 180px;
+    width: 180px;
+  }
+}
+@media screen and (max-width:1600px)
 {
   .header .logo img
   {
@@ -1960,6 +2021,11 @@ body.stiinta .pictures
     width: 150px;
   }
 
+  #footer .content .nav li
+  {
+    padding: 0 40px;
+  }
+
 }
 @media screen and (max-width:700px) {
   body{
@@ -2019,7 +2085,11 @@ body.stiinta .pictures
   }
   #footer .content p
   {
-    font-size: 11px;
+    font-size: 13px;
+  }
+  #footer .content .nav li
+  {
+    padding: 0 30px;
   }
   .tablouri .home
   {
@@ -2204,6 +2274,10 @@ body.stiinta .pictures
   {
     font-size: 11px;
   }
+  #footer .content .nav li
+  {
+    padding: 0 20px;
+  }
 }
 @media screen and (max-width:500px) {
   body{
@@ -2284,7 +2358,7 @@ body.stiinta .pictures
   }
   #footer .content p
   {
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
     display: none;
   }
@@ -2292,6 +2366,34 @@ body.stiinta .pictures
   {
     display: block;
   }
+  #footer .content .nav
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer 
+  {
+    height: 45vh;
+  }
+  #footer .content .nav.desktop
+  {
+    display: none;
+  }
+  #footer .content .nav.mobile
+  {
+    display: flex;
+  }
+  #footer .content .nav.mobile .mobnav
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  #footer .content .nav.mobile .mobnav li
+  {
+    padding: 25px 18px;
+  }
+
+
   .biografie .home 
   {
     height: 125vh;
@@ -2400,6 +2502,10 @@ body.stiinta .pictures
     animation: 1s fadeIn;
     animation-delay: .6s;
   }
+  .content .box .box .left .see-project
+  {
+    margin: 40px 0;
+  }
 }
 @media screen and (max-width:450px) {
   body{
@@ -2431,6 +2537,11 @@ body.stiinta .pictures
   .tablouri .home
   {
     margin-bottom: 400px;
+    padding-right: 6vw;
+  }
+  .stiinta .home .info-text .text p
+  {
+    margin-right: 0px;
   }
   
   .pictures .box1 img,
@@ -2478,7 +2589,7 @@ body.stiinta .pictures
   }
   .nav .mobnav ul a
   {
-    font-size: 14px;
+    font-size: 13.5px;
   }
   .home h1
   {
@@ -2514,6 +2625,11 @@ body.stiinta .pictures
   }
 }
 @media screen and (max-width:400px) {
+  .nav .mobnav ul a
+  {
+    font-size: 13.5px;
+    padding: 10px 18px;
+  }
   body{
     background-position-x: -199vh;
   }
@@ -2641,8 +2757,8 @@ body.stiinta .pictures
 @media screen and (max-width:350px) {
   .nav .mobnav ul a
   {
-    font-size: 11px;
-    padding: 6px 18px;
+    font-size: 12px;
+    padding: 6px 16px;
   }
   .home h1
   {
@@ -2741,5 +2857,10 @@ body.stiinta .pictures
   .index-body .results .content .box p
   {
     font-size: 13px;
+  }
+
+  #footer .content .nav.mobile li {
+    font-size: 12px;
+    padding: 5px 16px;
   }
 }

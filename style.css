@@ -116,7 +116,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    /* cursor: pointer; */
     animation: arrow-anim 0.8s;
     animation-iteration-count: infinite;
   }
@@ -148,7 +148,7 @@
       border: 2px solid var(--main-color);
       color: var(--main-color);
       background-color: transparent;
-      cursor: pointer;
+      /* cursor: pointer; */
       transition: .3s ease;
   }
   .home-btn button:hover
@@ -248,7 +248,7 @@
     height: 0;
     animation: zoomIn .5s;
     animation-delay: .6s;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   .header .logo h1
   {
@@ -283,7 +283,7 @@
 
      .hamb
      {
-         cursor: pointer;
+         /* cursor: pointer; */
          display: block;
          padding: 20px 0px;
      }
@@ -337,7 +337,7 @@
          height: 100vh;
          background-color: var(--main-color);
          transition: all .5s ;
-         cursor: default;
+         /* cursor: default; */
          z-index: 2;
          z-index: 9999;
          font-family: 'Open Sans', sans-serif;
@@ -351,7 +351,7 @@
       width: 100%;
       height: 100%;
       background-color: #00000021;
-      cursor: default;
+      /* cursor: default; */
       animation: .5s fadeIn;
      }
      #side-menu:checked ~ #hambmenu
@@ -367,7 +367,7 @@
          margin: 40px;
          transition: .3s ease;
         -webkit-transition: .3s ease;
-        cursor: pointer;
+        /* cursor: pointer; */
      }
      #hambmenu .xbutton:hover
      {
@@ -375,7 +375,7 @@
      }
      #hambmenu .xbutton i
      {
-         font-size: 30px;
+         font-size: 28px;
          color: var(--white);
      }
      #hambmenu .navig
@@ -449,12 +449,12 @@
 .select-btn
 {
     padding: 7px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .select-btn.active
 {
     padding: 7px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .select-btn i
 {
@@ -1115,6 +1115,16 @@ section.content
   font-weight: 600;
 }
 
+.content .box .obiect8.box .see-project
+{
+  margin: 10px 0;
+}
+.content .box .obiect8.box .see-project.t
+{
+  margin-bottom: 50px;
+}
+
+
 
 @keyframes textHighlight {
   0% {transform: translateX(0), rotate(90deg); }
@@ -1135,7 +1145,7 @@ section.content
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 35vh;
+  height: 36vh;
   background-color: var(--main-color);
   font-family: 'Open Sans';
 }
@@ -1434,6 +1444,7 @@ body.etapa1-body .content
 {
   margin-top: 0px;
 }
+
 
 
 .index-body .content .box .obiect4.box
@@ -2328,7 +2339,7 @@ body.stiinta .pictures
   }
   section.nav 
   {
-    height: 10vh;
+    height: 11vh;
   }
   .nav .desktopnav
   {
@@ -2373,7 +2384,7 @@ body.stiinta .pictures
   }
   #footer 
   {
-    height: 45vh;
+    height: 48vh;
   }
   #footer .content .nav.desktop
   {
@@ -2506,6 +2517,16 @@ body.stiinta .pictures
   {
     margin: 40px 0;
   }
+  #hambmenu .xbutton
+  {
+    height: 0;
+    padding: 10px 0 5px 0;
+  }
+  #hambmenu .xbutton i
+     {
+         font-size: 26px;
+         color: var(--white);
+     }
 }
 @media screen and (max-width:450px) {
   body{
@@ -2622,6 +2643,22 @@ body.stiinta .pictures
   {
     width: 250px;
     height: 250px;
+    
+  }
+
+  .sculpturi.biografie .home
+  {
+    height: 130vh;
+  }
+
+  .sculpturi .home
+  {
+    height: 90vh;
+  }
+
+  .arhitectura .home
+  {
+    height: 85vh;
   }
 }
 @media screen and (max-width:400px) {
@@ -2710,6 +2747,7 @@ body.stiinta .pictures
     padding-right: 0vw;
     font-size: 19.5px;
   }
+
 }
 @media screen and (max-height:650px) 
 {
@@ -2778,11 +2816,11 @@ body.stiinta .pictures
   }
   .sculpturi .nav 
   {
-    height: 12vh;
+    height: 11vh;
   }
   .header .logo
   {
-    margin: 0px 75px;
+    margin: 0px 70px;
   }
   .header .logo img
   {
@@ -2862,5 +2900,36 @@ body.stiinta .pictures
   #footer .content .nav.mobile li {
     font-size: 12px;
     padding: 5px 16px;
+  }
+  #footer
+  {
+    height: 60vh;
+  }
+  .sculpturi.biografie .home 
+  {
+    height: 190vh;
+  }
+  .biografie .home .video iframe
+  {
+    width: 250px;
+  }
+
+  .tablouri .home
+  {
+    height: 120vh;
+  }
+
+  .sculpturi .home .video iframe
+  {
+    width: 250px;
+    height: 200px;
+  }
+  .sculpturi .home
+  {
+    height: 100vh;
+  }
+  .stiinta .home
+  {
+    height: 100vh;
   }
 }

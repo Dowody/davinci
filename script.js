@@ -46,11 +46,11 @@ window.addEventListener("scroll", () => {
 
 // CUSTOM CURSOR
 
-// new kursor ({
-//     type: 4,
-//     removeDefaultCursor: true,
-//     color: '#171717',
-// });
+new kursor ({
+    type: 4,
+    removeDefaultCursor: true,
+    color: '#171717',
+});
 
 
 
@@ -109,24 +109,6 @@ closeButton.addEventListener("click", () => {
 
 
 
-// NAV STICK
-// window.onscroll = function() {myFunction()};
-
-// // Get the navbar
-// var navbar = document.getElementById("nav");
-
-// // Get the offset position of the navbar
-// var sticky = navbar.offsetTop;
-
-// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
 
 // IMAGES REVEAL
 window.addEventListener('scroll', reveal);
@@ -257,9 +239,6 @@ const slider16 = new SliderClip(document.querySelector(".etapa1 .slider16"));
 
 
 // LANGUAGE CHANGE
-// RESPONSIVE SCREEN
-// ETAPA 2
 // URL NAME CHANGE
 
-// FOOTER ETAPA NAV
  

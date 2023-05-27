@@ -1,3 +1,5 @@
+
+
 // PRELOAD
 setTimeout(function(){
   $('.loader_bg').fadeToggle();
@@ -46,11 +48,11 @@ window.addEventListener("scroll", () => {
 
 // CUSTOM CURSOR
 
-new kursor ({
-    type: 4,
-    removeDefaultCursor: true,
-    color: '#171717',
-});
+// new kursor ({
+//     type: 4,
+//     removeDefaultCursor: true,
+//     color: '#171717',
+// });
 
 
 
@@ -134,6 +136,7 @@ function reveal()
     }
 }
 
+
 // HOME BUTTON APPEAR
 const btn = document.querySelector(".home-btn");
 let btnAppear = 400;
@@ -150,6 +153,8 @@ window.addEventListener("scroll", () => {
 
     lastScrollY = window.scrollY;
 });
+
+
 
 // CONTENT IMAGE SLIDER
 {
@@ -214,22 +219,22 @@ window.addEventListener("scroll", () => {
     }
 }
 
-const slider1 = new SliderClip(document.querySelector(".etapa1 .slider1"));
-const slider2 = new SliderClip(document.querySelector(".etapa1 .slider2"));
-const slider3 = new SliderClip(document.querySelector(".etapa1 .slider3"));
-const slider4 = new SliderClip(document.querySelector(".etapa1 .slider4"));
-const slider5 = new SliderClip(document.querySelector(".etapa1 .slider5"));
-const slider6 = new SliderClip(document.querySelector(".etapa1 .slider6"));
-const slider7 = new SliderClip(document.querySelector(".etapa1 .slider7"));
-const slider8 = new SliderClip(document.querySelector(".etapa1 .slider8"));
-const slider9 = new SliderClip(document.querySelector(".etapa1 .slider9"));
-const slider10 = new SliderClip(document.querySelector(".etapa1 .slider10"));
-const slider11 = new SliderClip(document.querySelector(".etapa1 .slider11"));
-const slider12 = new SliderClip(document.querySelector(".etapa1 .slider12"));
-const slider13 = new SliderClip(document.querySelector(".etapa1 .slider13"));
-const slider14 = new SliderClip(document.querySelector(".etapa1 .slider14"));
-const slider15 = new SliderClip(document.querySelector(".etapa1 .slider15"));
-const slider16 = new SliderClip(document.querySelector(".etapa1 .slider16"));
+const slider1 = new SliderClip(document.querySelector(".slider1"));
+const slider2 = new SliderClip(document.querySelector(".slider2"));
+const slider3 = new SliderClip(document.querySelector(".slider3"));
+const slider4 = new SliderClip(document.querySelector(".slider4"));
+const slider5 = new SliderClip(document.querySelector(".slider5"));
+const slider6 = new SliderClip(document.querySelector(".slider6"));
+const slider7 = new SliderClip(document.querySelector(".slider7"));
+const slider8 = new SliderClip(document.querySelector(".slider8"));
+const slider9 = new SliderClip(document.querySelector(".slider9"));
+const slider10 = new SliderClip(document.querySelector(".slider10"));
+const slider11 = new SliderClip(document.querySelector(".slider11"));
+const slider12 = new SliderClip(document.querySelector(".slider12"));
+const slider13 = new SliderClip(document.querySelector(".slider13"));
+const slider14 = new SliderClip(document.querySelector(".slider14"));
+const slider15 = new SliderClip(document.querySelector(".slider15"));
+const slider16 = new SliderClip(document.querySelector(".slider16"));
 
 
 

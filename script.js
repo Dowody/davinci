@@ -48,11 +48,11 @@ window.addEventListener("scroll", () => {
 
 // CUSTOM CURSOR
 
-// new kursor ({
-//     type: 4,
-//     removeDefaultCursor: true,
-//     color: '#171717',
-// });
+new kursor ({
+    type: 4,
+    removeDefaultCursor: true,
+    color: '#171717',
+});
 
 
 

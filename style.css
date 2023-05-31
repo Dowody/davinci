@@ -3526,6 +3526,7 @@ p:last-child {
   .index-body .results .content .box h2
   {
     font-size: 60px;
+    margin-bottom: 20px;
   }
   .index-body .results .content .box p
   {

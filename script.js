@@ -242,7 +242,4 @@ const slider16 = new SliderClip(document.querySelector(".slider16"));
 
 };
 
-// URL NAME CHANGE
-
  
-// LOGO ANIM 

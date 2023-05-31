@@ -458,7 +458,7 @@
 }
 .select-btn i
 {
-    margin-left: 5px;
+    display: none;
 }
 .languages .content
 {  
@@ -1465,7 +1465,7 @@ body.etapa1-body .content
 {
   margin-top: 100px;
 }
-.content #etapa2 .title .title-mobile
+.content  .title .title-mobile
 {
   display: none;
 }
@@ -1483,13 +1483,32 @@ body.etapa1-body .content
 }
 .index-body .content .box .obiect2.box
 {
-  margin-top: 150px;
+  margin-top: 175px;
 }
 .index-body .content .box .obiect3.box
 {
+  margin-top: 200px;
+}
+.index-body .content .box .obiect7.box
+{
   margin-top: 100px;
 }
-
+.index-body .content .box .obiect8.box .slider
+{
+  height: 33vh;
+}
+.index-body .content .box .obiect8.box 
+{
+  margin-top: 125px;
+}
+.index-body .content .box .obiect9.box 
+{
+  margin-top: 125px;
+}
+.index-body .content .box .obiect10.box 
+{
+  margin-top: 100px;
+}
 
 /* SCULPTURI */
 
@@ -1835,7 +1854,7 @@ p:last-child {
 
 .info-proiect-body .home 
 {
-  height: 1000vh;
+  height: 900vh;
   display: flex;
   flex-direction: row;
   padding-right: 6vw;
@@ -2109,6 +2128,48 @@ p:last-child {
   width: 100%;
 }
 
+.info-proiect-body .alte .container
+{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;  
+  
+}
+.info-proiect-body .alte .container a
+{
+  padding: 10px 0;
+  color: var(--secondary-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+}
+.info-proiect-body .alte .container a:hover
+{
+  transform: scale(1.03);
+}
+
+
+
+
+.etapa3-body .content .box .obiect3.box,
+.etapa3-body .content .box .obiect4.box,
+.etapa3-body .content .box .obiect5.box,
+.etapa3-body .content .box .obiect6.box
+{
+  margin-top: 125px;
+}
+.etapa3-body .content .box .obiect8.box
+{
+  margin-top: 125px;
+}
+.etapa3-body .content .box .obiect9.box
+{
+  margin-top: 75px;
+  margin-bottom: 400px;
+}
 /* MEDIA */
 @media screen and (max-height:900px)
 {
@@ -2301,6 +2362,10 @@ p:last-child {
   .info-proiect-body .descriere-proiect .container .image img
   {
     width: 450px;
+  }
+  .info-proiect-body .home 
+  {
+    height: 1000vh;
   }
 }
 
@@ -2668,7 +2733,7 @@ p:last-child {
   {
     display: flex;
     flex-direction: column;
-    height: 1500vh;
+    height: 1300vh;
   }
 
   .info-proiect-body .home .pictures
@@ -2696,6 +2761,7 @@ p:last-child {
     display: flex;
     flex-direction: column;
   }
+
   .info-proiect-body .home .pictures
   {
     display: none;
@@ -2709,7 +2775,6 @@ p:last-child {
     position: relative;
     overflow: hidden;
     margin-top: 50px;
-    margin-bottom: 500px;
   }
 
 
@@ -3472,7 +3537,7 @@ p:last-child {
   }
   .index-body .header .logo
   {
-    animation: 1s fadeIn;
+    animation: none;
     animation-delay: .6s;
   }
   .content .box .box .left .see-project
@@ -3615,7 +3680,7 @@ p:last-child {
 
   .sculpturi.biografie .home
   {
-    height: 130vh;
+    height: 180vh;
   }
 
   .sculpturi .home
@@ -3684,6 +3749,10 @@ p:last-child {
   {
     width: 320px;
   }
+  .etapa3-body .content .box .obiect7.box 
+  {
+    margin-top: 150px;
+  }
 }
 @media screen and (max-width:400px) {
   .nav .mobnav ul a
@@ -3740,7 +3809,7 @@ p:last-child {
   }
   .content .box .box h1
   {
-    font-size: 40px;
+    font-size: 36px;
   }
   .content #etapa2 .title .title-mobile
   {

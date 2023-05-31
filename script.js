@@ -19,13 +19,13 @@ $('.hamburger').click(function(){
 
 
 // LANGUAGE CHANGER
-$(".select-btn").removeClass("active");
-$(".options").removeClass("active");
+// $(".select-btn").removeClass("active");
+// $(".options").removeClass("active");
 
-$(".select-btn").on("click",function(){
-    $(".select-btn").toggleClass("active");
-    $(".content").toggleClass("active");
-})
+// $(".select-btn").on("click",function(){
+//     $(".select-btn").toggleClass("active");
+//     $(".content").toggleClass("active");
+// })
 
 // HOME ARROW DISSAPEAR ON SCROLL
 const arrow = document.querySelector(".home-arrow");
@@ -48,11 +48,11 @@ window.addEventListener("scroll", () => {
 
 // CUSTOM CURSOR
 
-new kursor ({
-    type: 4,
-    removeDefaultCursor: true,
-    color: '#171717',
-});
+// new kursor ({
+//     type: 4,
+//     removeDefaultCursor: true,
+//     color: '#171717',
+// });
 
 
 
@@ -239,11 +239,10 @@ const slider16 = new SliderClip(document.querySelector(".slider16"));
 
 
 
+
 };
 
-
-
-// LANGUAGE CHANGE
 // URL NAME CHANGE
 
  
+// LOGO ANIM 
